@@ -1,3 +1,3 @@
-package com.rundgrun.eco.domain.exceptions
+package com.rundgrun.eco.data.exceptions
 
 class UpdateTokenException : Exception("Ошибка обновления токена")

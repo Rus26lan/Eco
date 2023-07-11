@@ -1,4 +1,4 @@
-package com.rundgrun.eco.domain.exceptions
+package com.rundgrun.eco.data.exceptions
 
 class AccountException: Exception("Ошибка авторизации") {
 }

@@ -25,7 +25,7 @@ fun EventLogView(
     val gameUiState by viewModel.uiState.collectAsState()
     LazyColumn {
         items(gameUiState) {
-            Spacer(modifier = Modifier.height(2.dp))
+            Spacer(modifier = Modifier.height(6.dp))
             EventLogItem(event = it)
         }
     }
@@ -39,10 +39,30 @@ fun EventLogItem(
     Row(modifier = Modifier
         .fillMaxWidth()
         .background(color = Color.Black)) {
-        Text(text = event.date, fontSize = 8.sp, color = Color.Green, modifier = Modifier.weight(0.2f), textAlign = TextAlign.Center)
-        Text(text = event.name.toString(), fontSize = 10.sp, color = Color.Green, modifier = Modifier.weight(0.2f), textAlign = TextAlign.Center)
-        Text(text = event.volt.toString(), fontSize = 8.sp, color = Color.Red, modifier = Modifier.weight(0.2f), textAlign = TextAlign.Center)
-        Text(text = event.modem.toString(), fontSize = 8.sp, color = Color.Green, modifier = Modifier.weight(0.2f), textAlign = TextAlign.Center)
-        Text(text = event.airnode.toString(), fontSize = 8.sp, color = Color.Green, modifier = Modifier.weight(0.2f), textAlign = TextAlign.Center)
+        Text(text = event.date,
+            fontSize = 8.sp,
+            color = Color.Green,
+            modifier = Modifier.weight(0.2f),
+            textAlign = TextAlign.Center)
+        Text(text = event.name.toString(),
+            fontSize = 10.sp,
+            color = Color.Green,
+            modifier = Modifier.weight(0.2f),
+            textAlign = TextAlign.Center)
+        Text(text = event.volt.toString(),
+            fontSize = 8.sp,
+            color = Color.Red,
+            modifier = Modifier.weight(0.2f),
+            textAlign = TextAlign.Center)
+        Text(text = event.modem.toString(),
+            fontSize = 8.sp,
+            color = Color.Green,
+            modifier = Modifier.weight(0.2f),
+            textAlign = TextAlign.Center)
+        Text(text = event.airnode.toString(),
+            fontSize = 8.sp,
+            color = Color.Green,
+            modifier = Modifier.weight(0.2f),
+            textAlign = TextAlign.Center)
     }
 }
