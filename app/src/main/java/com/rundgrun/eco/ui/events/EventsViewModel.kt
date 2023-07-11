@@ -12,14 +12,24 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import java.util.*
+import kotlin.collections.ArrayList
 
 class EventsViewModel : ViewModel() {
     private val client = GrafanaClient()
-
+    var events = java.util.ArrayList<PakEvent>()
     private val _uiState = MutableStateFlow(ArrayList<PakEvent>())
     val uiState: StateFlow<ArrayList<PakEvent>> = _uiState.asStateFlow()
 
     init {
+        for (i in 1..100) {
+            val event = PakEvent(
+                Date().time.toString(),
+                Random().nextInt(200).toString(), "5", "5", "5"
+            )
+            events.add(event)
+        }
+        _uiState.value = events
         viewModelScope.launch(Dispatchers.IO) {
             client.setListener(object : GrafanaListener {
                 override fun updateEventLog(list: ArrayList<PakEvent>?) {
@@ -35,7 +45,7 @@ class EventsViewModel : ViewModel() {
                 }
             })
             delay(10000)
-            client.singleConnection()
+//            client.singleConnection()
         }
     }
 }

@@ -15,14 +15,6 @@ import java.util.*
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var events = ArrayList<PakEvent>()
-        for (i in 1..100) {
-            val event = PakEvent(
-                Date().time.toString(),
-                Random().nextInt(200).toString(), "5", "5", "5"
-            )
-            events.add(event)
-        }
         setContent {
             EcoTheme {
                 Surface(
