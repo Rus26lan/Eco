@@ -7,10 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.rundgrun.eco.data.PakEvent
 import com.rundgrun.eco.ui.events.EventLogView
 import com.rundgrun.eco.ui.theme.EcoTheme
-import java.util.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

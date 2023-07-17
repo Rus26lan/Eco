@@ -1,4 +1,4 @@
-package com.rundgrun.eco.data;
+package com.rundgrun.eco.domain.models;
 
 public enum StatusPak {
     NONE("----"), ERROR("НЕИСПРАВЕН"), NEWERROR("ПРОПАЛО"), NORMAL("В РАБОТЕ"), NEWNORMAL("ПОЯВИЛОСЬ");

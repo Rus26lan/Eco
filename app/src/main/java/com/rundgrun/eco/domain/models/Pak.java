@@ -1,4 +1,4 @@
-package com.rundgrun.eco.data;
+package com.rundgrun.eco.domain.models;
 
 public class Pak {
     public int name;

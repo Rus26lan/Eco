@@ -2,21 +2,22 @@ package com.rundgrun.eco.data.repositories
 
 import com.rundgrun.eco.data.datasources.TokenLocalDataSource
 import com.rundgrun.eco.data.datasources.TokenRemoteDataSource
+import com.rundgrun.eco.domain.repositories.TokenRepository
 
-class TokenRepository {
+class TokenRepositoryImpl : TokenRepository {
 
     lateinit var tokenLocalDataSource: TokenLocalDataSource
     lateinit var tokenRemoteDataSource: TokenRemoteDataSource
 
-    fun getToken(): String {
+    override fun getToken(): String {
         return tokenLocalDataSource.getToken()
     }
 
-    fun saveToken(token: String) {
+    override fun saveToken(token: String) {
         tokenLocalDataSource.saveToken(token)
     }
 
-    fun updateToken() {
+    override fun updateToken() {
         tokenLocalDataSource.saveToken(tokenRemoteDataSource.updateToken(tokenLocalDataSource.getToken()))
     }
 }

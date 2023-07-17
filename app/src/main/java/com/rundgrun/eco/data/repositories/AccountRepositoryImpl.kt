@@ -2,20 +2,21 @@ package com.rundgrun.eco.data.repositories
 
 import com.rundgrun.eco.data.datasources.AccountLocalDataSource
 import com.rundgrun.eco.domain.models.Account
+import com.rundgrun.eco.domain.repositories.AccountRepository
 
-class AccountRepository {
+class AccountRepositoryImpl : AccountRepository {
 
     lateinit var accountLocalDataSource: AccountLocalDataSource
 
-    fun getAccount(): Account {
+    override fun getAccount(): Account {
         return accountLocalDataSource.getAccount()
     }
 
-    fun saveAccount(account: Account) {
+    override fun saveAccount(account: Account) {
        accountLocalDataSource.saveAccount(account)
     }
 
-    fun removeAccount(){
+    override fun removeAccount(){
       accountLocalDataSource.removeAccount()
     }
 }

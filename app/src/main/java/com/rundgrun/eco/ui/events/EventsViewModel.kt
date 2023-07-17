@@ -2,8 +2,8 @@ package com.rundgrun.eco.ui.events
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.rundgrun.eco.data.Pak
-import com.rundgrun.eco.data.PakEvent
+import com.rundgrun.eco.domain.models.Pak
+import com.rundgrun.eco.domain.models.PakEvent
 import com.rundgrun.eco.domain.GrafanaClient
 import com.rundgrun.eco.domain.GrafanaListener
 import kotlinx.coroutines.Dispatchers

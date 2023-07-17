@@ -1,7 +1,7 @@
 package com.rundgrun.eco.domain;
 
-import com.rundgrun.eco.data.Pak;
-import com.rundgrun.eco.data.PakEvent;
+import com.rundgrun.eco.domain.models.Pak;
+import com.rundgrun.eco.domain.models.PakEvent;
 
 import java.io.FileWriter;
 import java.io.IOException;
