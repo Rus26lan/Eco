@@ -1,7 +1,7 @@
 package com.rundgrun.eco.data.datasources
 
 import android.content.Context
-import com.rundgrun.eco.data.exceptions.TokenException
+import com.rundgrun.eco.domain.exceptions.TokenException
 
 private const val DATA = "data"
 private const val TOKEN = "token"

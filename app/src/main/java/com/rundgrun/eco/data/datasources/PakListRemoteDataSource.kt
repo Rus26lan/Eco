@@ -1,7 +1,7 @@
 package com.rundgrun.eco.data.datasources
 
 import com.rundgrun.eco.domain.models.Pak
-import com.rundgrun.eco.data.exceptions.UpdateTokenException
+import com.rundgrun.eco.domain.exceptions.UpdateTokenException
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request

@@ -2,8 +2,8 @@ package com.rundgrun.eco.domain;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.rundgrun.eco.data.exceptions.AuthorizationException;
-import com.rundgrun.eco.data.exceptions.UpdateTokenException;
+import com.rundgrun.eco.domain.exceptions.AuthorizationException;
+import com.rundgrun.eco.domain.exceptions.UpdateTokenException;
 
 
 import java.io.*;

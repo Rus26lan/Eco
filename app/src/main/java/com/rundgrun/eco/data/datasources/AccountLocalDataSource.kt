@@ -1,7 +1,7 @@
 package com.rundgrun.eco.data.datasources
 
 import android.content.Context
-import com.rundgrun.eco.data.exceptions.AccountException
+import com.rundgrun.eco.domain.exceptions.AccountException
 import com.rundgrun.eco.domain.models.Account
 
 

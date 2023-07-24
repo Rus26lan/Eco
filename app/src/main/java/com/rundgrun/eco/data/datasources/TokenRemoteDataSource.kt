@@ -1,6 +1,6 @@
 package com.rundgrun.eco.data.datasources
 
-import com.rundgrun.eco.data.exceptions.UpdateTokenException
+import com.rundgrun.eco.domain.exceptions.UpdateTokenException
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.IOException

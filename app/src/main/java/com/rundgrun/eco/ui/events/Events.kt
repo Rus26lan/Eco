@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.rundgrun.eco.domain.models.PakEvent
+import com.rundgrun.eco.domain.models.Event
 
 @Composable
 fun EventLogView(
@@ -33,7 +33,7 @@ fun EventLogView(
 @Composable
 fun EventLogItem(
     modifier: Modifier = Modifier,
-    event: PakEvent
+    event: Event
 ) {
     Row(modifier = Modifier
         .fillMaxWidth()
@@ -43,7 +43,7 @@ fun EventLogItem(
             color = Color.Green,
             modifier = Modifier.weight(0.2f),
             textAlign = TextAlign.Center)
-        Text(text = event.name.toString(),
+        Text(text = event.deviceName.toString(),
             fontSize = 10.sp,
             color = Color.Green,
             modifier = Modifier.weight(0.2f),
